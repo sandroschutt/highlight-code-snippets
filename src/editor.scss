@@ -1,0 +1,35 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-highlight-code-snippets {
+	.hl-container {
+		padding: 24px;
+		background-color: #e6e6e6;
+		border: 1px solid #cecece;
+
+		label {
+			display: block;
+		}
+
+		.code-content {
+			margin-top: 24px;
+			textarea {
+				padding: 16px;
+				width: 100%;
+				min-height: 300px;
+			}
+		}
+
+		#save-code-snippet {
+			font-size: .8em;
+		}
+
+		.tag-alert {
+			font-size: .6em;
+			color: #707070;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-highlight-code-snippets {
+	.code-snippet-container {
+		background-color: #272822;
+
+		padding: 15px 30px;
+		font-size: 0.7em;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+
+		p {
+			font-style: italic;
+			color: #cecece;
+		}
+	}
+}

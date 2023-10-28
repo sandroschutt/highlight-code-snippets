@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/highlight-code-snippets",
+	"version": "0.1.0",
+	"title": "Highlight Code Snippets",
+	"category": "widgets",
+	"attributes": {
+		"id": { "type": "string", "default": "none"},
+		"title": { "type": "string", "default": "code.html"},
+		"language": { "type": "string", "default": "html"},
+		"code": { "type": "string", "default": "console.log('Highlight Snippets!')" }
+	},
+	"icon": "media-code",
+	"description": "Create code snippets blocks for your posts",
+	"example": {
+		"attributes": {
+			"title": "hljscode.html",
+			"language": "html",
+			"code": "<script>\nconsole.log('Highlight Snippets!')\n</script>"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "highlight-code-snippets",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

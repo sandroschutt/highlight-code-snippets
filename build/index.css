@@ -1,0 +1,33 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-highlight-code-snippets .hl-container {
+  padding: 24px;
+  background-color: #e6e6e6;
+  border: 1px solid #cecece;
+}
+.wp-block-create-block-highlight-code-snippets .hl-container label {
+  display: block;
+}
+.wp-block-create-block-highlight-code-snippets .hl-container .code-content {
+  margin-top: 24px;
+}
+.wp-block-create-block-highlight-code-snippets .hl-container .code-content textarea {
+  padding: 16px;
+  width: 100%;
+  min-height: 300px;
+}
+.wp-block-create-block-highlight-code-snippets .hl-container #save-code-snippet {
+  font-size: 0.8em;
+}
+.wp-block-create-block-highlight-code-snippets .hl-container .tag-alert {
+  font-size: 0.6em;
+  color: #707070;
+}
+
+/*# sourceMappingURL=index.css.map*/
