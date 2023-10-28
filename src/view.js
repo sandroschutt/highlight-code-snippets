@@ -31,9 +31,9 @@ $(document).ready(() => {
 		const container = $(".code-snippet-container");
 
 		$.map(container, (snippet) => {
-			let renderTarget = snippet.childNodes[7];
+			let renderTarget = snippet.childNodes[3];
 			ReactDOM.render(
-				<SaveHighlightComponent data_id={snippet.attributes.id} data_title={snippet.attributes.title} />,
+				<SaveHighlightComponent data_id={snippet.attributes.id} />,
 				renderTarget,
 			);
 			let title = document.createElement('p');

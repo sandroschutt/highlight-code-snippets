@@ -130,7 +130,7 @@ function EditHlightComponent(props) {
 					</Button>
 					<p class="tag-alert">
 						You need to insert the tag <strong>code</strong> in your post for
-						making the code snippets appear in the frontend
+						making the code snippets show in the frontend
 					</p>
 				</div>
 			</FlexBlock>

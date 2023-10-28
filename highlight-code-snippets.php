@@ -20,7 +20,7 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-include __DIR__ . "/includes/php/hljs_scripts.php";
+include __DIR__ . "/src/includes/php/hljs_scripts.php";
 
 function highlight_code_snippets_highlight_code_snippets_block_init() {
 	register_block_type( __DIR__ . '/build' );
