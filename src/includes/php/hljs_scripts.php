@@ -6,6 +6,8 @@ function hljs_scripts()
 	global $post;
 	$post_tags = get_the_tags($post->ID);
 
+	// print_r($post_tags);
+
 	if (is_single() && $post_tags != null && has_code_tag($post_tags)) {
 		wp_enqueue_style('highlightjs-css', '//cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/monokai.min.css');
 		wp_enqueue_script('highlightjs', '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/highlight.min.js', [], 'latest', true);
@@ -17,7 +19,9 @@ function has_code_tag($post_tags)
 	$has_tag = false;
 
 	foreach ($post_tags as $key => $tag) {
-		$tag->name == 'code' ? $has_tag = true : $has_tag = false;
+		if($tag->name == "code") {
+			$has_tag = true;
+		}
 	}
 
 	return $has_tag;

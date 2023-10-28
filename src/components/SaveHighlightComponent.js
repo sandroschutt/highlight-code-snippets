@@ -9,7 +9,7 @@ function SaveHighlightComponent(props) {
 	return (
 		<div>
 			<pre>
-				<code className={`${data.language} hljs`}>
+				<code className={`${data.language} hljs`} id={`code-${id}`}>
 					<p>{data.code}</p>
 				</code>
 			</pre>

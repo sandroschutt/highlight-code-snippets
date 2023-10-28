@@ -32,13 +32,32 @@ $(document).ready(() => {
 
 		$.map(container, (snippet) => {
 			let renderTarget = snippet.childNodes[3];
+			const id = snippet.attributes.id.value;
+
 			ReactDOM.render(
 				<SaveHighlightComponent data_id={snippet.attributes.id} />,
 				renderTarget,
 			);
+
+			let snippetHeader = document.createElement('div');
+			snippetHeader.classList.add('snippet-header');
+
 			let title = document.createElement('p');
 			title.innerText = `// ${snippet.attributes.title.value}`;
-			renderTarget.prepend(title)
+
+			let copyIcon = document.createElement('p')
+			copyIcon.innerHTML = `<span style="margin-right: 10px;">copy</span><i class="bi bi-clipboard"></i>`;
+
+			copyIcon.addEventListener('click', () => {
+				let code = $(`#code-${id}`).text()
+				copyIcon.innerHTML = `<span style="color: lightgreen; margin-right: 10px; font-weight: medium;">copied!</span><i class="bi bi-clipboard-check-fill" style="color: lightgreen"></i>`;
+				navigator.clipboard.writeText(code);
+			})
+
+			snippetHeader.appendChild(title);
+			snippetHeader.appendChild(copyIcon);
+
+			renderTarget.prepend(snippetHeader);
 		});
 
 		hljs.highlightAll();
